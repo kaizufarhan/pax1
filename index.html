@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Goals</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>DID YOU COMPLETE YOUR GOALS FOR TODAY?</h1>
+    <div>
+        <button id="yesBtn" onclick="recordVote('yes')">Yes</button>
+        <button id="noBtn" onclick="recordVote('no')">No</button>
+    </div>
+    <div id="feedbackMessage" class="feedback-message"></div>
+    
+    <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropbtn">Vote Counter</button>
+        <div id="voteDropdown" class="dropdown-content">
+            <p>Yes: <span id="yesCount">0</span></p>
+            <p>No: <span id="noCount">0</span></p>
+            <p>Total: <span id="totalCount">0</span></p>
+            <button onclick="resetCounter()">Reset Counter</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
